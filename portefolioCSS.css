@@ -1,0 +1,226 @@
+*{
+    color:aliceblue;
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-style: italic;
+    box-sizing:border-box;
+}
+body{
+    background-color:rgb(23, 22, 66)
+    }
+
+/*HEAD*/
+.head{
+        top:0;
+        left:0;
+        width:100%;
+        padding : 20px 15% ;
+        background-color: rgb(36, 36, 124);
+        
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        z-index:10;/*  changer*/
+
+    
+    
+    
+}
+
+    .titre{
+        padding:0;
+        margin:5px;
+        text-decoration:none;
+        font-weight:900;
+        font-size:40px;
+    }
+    
+    
+    
+    
+    .nav a{
+        text-decoration:none;
+        font-weight:400;
+        font-size:x-large;
+        margin-left:18px;
+    }
+    
+    .lab_icn{
+        font-size:30px;
+        color:white;
+        cursor: pointer;
+         
+        display:none;
+        position:absolute;
+        right:3%;
+    }
+    
+    .titre:hover, nav a:hover{
+        text-decoration : underline gray ;
+    }
+    
+   /* @media (max-width:810px){
+    
+    
+        .nav{
+            position:absolute;
+            left:0;
+            top:100%;
+            width:100%;
+            height:250px;
+            background-image: linear-gradient(to right , white 3%,grey 90%);
+        
+        }
+    
+        nav a {
+            display:block;
+            margin:20px 0 0 0;
+            text-align:center;
+            font-size: 20px;
+        }
+    
+        .titre{
+            position: absolute;
+            left: 45%;
+        }
+    }
+*/
+/*                  HOME    */      
+
+.home{
+    margin:0 0 20px;
+    position:relative;
+    width:100%;
+    height:600px;
+    /*background-color:red;*/
+
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+    .home_text{
+        
+        margin-top:10%;
+        font-size:33px;
+    } 
+        .home-text h2{
+            font-size:55%;
+            margin-top:11px;
+        }  
+        .home-text h2 span{
+            color:brown;
+        }  
+
+    .home_img{
+        margin:5%;
+            }
+ img{
+     height:500px;
+ }
+
+
+/*-----------------------------ABOUT*/
+.about{
+    margin:0 0 20px;
+    position:relative;
+    width:100%;
+    height:600px;
+    /*background-color:blue;*/
+}
+.about h2 {
+    color:white;
+    font-weight:600;
+    font-size: 40px;
+}
+.intro{
+    font-size: 18px;;
+    color:hwb(0 55% 41%);
+
+}
+.about ul{
+    font-size: 24px;
+    margin:15px;
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    list-style-type: none ;
+    text-decoration-line: underline;
+}
+.about ul:hover{
+    cursor: pointer;
+}
+
+#headskill,#headeducation{
+    display:none;
+}
+
+/*----------------------Project----------------*/
+.projects{
+    margin:0 0 20px;
+    position:relative;
+    width:100%;
+    height:600px;
+    /*background-color:green;*/
+}
+.project_group{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.project_group div{
+    padding:10%;
+    margin:5%;
+    background-color: gray;
+    /*SHADOW*/
+}
+
+
+/*********************************Contact*********************/
+
+.contact{
+    position:relative;
+    width:100%;
+    height:200px;
+    /*background-color:yellow;*/
+}
+
+form {
+    width:100%;
+    background-color: #070a2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display:flex;
+    flex-direction: row;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    color:blue;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
